@@ -9,7 +9,9 @@
 ![](blokova_schema.png)
 ## Potrebné súčiastky	
 •	STM32
+
 •	Jumper káble
+
 •	SD karta / Micro SD karta + redukcia / Mini SD karta + redukcia
 
  
