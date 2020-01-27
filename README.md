@@ -6,6 +6,7 @@
 3.	Získanie dát z existujúcej komunikácie
 4.	Zápis získaných dát na SD kartu pomocou zbernice SPI vo zvolenom formáte
 
+![](blokova_schema.png)
 ## Potrebné súčiastky	
 •	STM32
 •	Jumper káble
@@ -13,6 +14,7 @@
 
  
 ## Pripojenie zariadenia:
+![](stm32f303k8_pinout.png)
 Pre správnu funkčnosť je potrebné pripojiť zariadenie podľa nasledujúcich inštrukcii:
 Odpočúvaná linka č.1    		UART1 RX -> RX1 	pin PA10/D0
 Odpočúvaná linka č.2    		UART2 RX -> RX2	pin PA3/A2
