@@ -33,7 +33,7 @@ Posledným krokom je pripojenie STM F303K8 k zdroju 5V, najlepšie pomocou micro
 V prípade že pri inicializácii SD karty nastala chyba rozsvieti sa dióda LED3. V takom prípade je potrebné STM zariadenie odpojiť od napájania. Skontrolovať či je SD karta správne pripojená a následne proces pripojenia zopakovať.
 
 
-## Programátorská priručka
+## Programátorská príručka
 Komunikácia s SD kartou a samotný zápis údajov je nakonfigurovaný pomocou periférii SPI a FATFS. Pre odchytávanie dát zo sériovej komunikácie sú použité dve periférie USART1 a USART2 v asynchrónnom režime. V neposlednom rade používame perifériu GPIO pre SPI_CS pin ako GPIO_output a pre LED3 / PB3 ako GPIO_output. 
 Pre každú perifériu je vygenerovaná a prispôsobená dvojica súborov  _periéria .c/.h .
 Prioritne bola použitá knižnica _LL a to pre USART a  GPIO, pre FATFS a SPI sme boli nútený použiť knižnicu _HAL a to z dôvodu že FATFS je vytvorená iba pre _HAL a používa niektoré prvky _HAL knižnice pre SPI.
